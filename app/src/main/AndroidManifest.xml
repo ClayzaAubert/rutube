@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
-
     <uses-permission android:name="android.permission.INTERNET"/>
-    <!-- Tambahkan ini: untuk cek status jaringan via ConnectivityManager -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- Optional: Allow cleartext if you ever embed non-HTTPS content on very old devices -->
-    <!-- <application android:usesCleartextTraffic="true" ...> + res/xml/network_security_config.xml -->
-    -
     <application
         android:allowBackup="true"
         android:supportsRtl="true"
@@ -28,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
     </application>
 </manifest>
