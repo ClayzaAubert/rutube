@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>RuTube — Tonton YouTube lebih ringan & minim iklan</title>
+  <meta name="title" content="RuTube — Tonton YouTube lebih ringan & minim iklan" />
+  <meta name="description" content="RuTube adalah aplikasi WebView untuk pengalaman YouTube yang lebih nyaman di Android, termasuk Android 7+. Fitur: Mode Gelap/Terang Otomatis, pemblokiran iklan, hemat data, dan buka kualitas 4K. Proyek 100% open-source." />
+  <meta name="keywords" content="RuTube, YouTube WebView, Android 7, pemblokiran iklan, dark mode, 4K, hemat data, open source, APK YouTube" />
+  <meta name="author" content="Clayza Aubert" />
+  <link rel="canonical" href="https://github.com/ClayzaAubert/rutube" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="RuTube — Tonton YouTube lebih ringan & minim iklan" />
+  <meta property="og:description" content="Pengalaman YouTube yang lebih nyaman dengan pemblokiran iklan, hemat data, 4K, dan mode gelap/terang otomatis. Kompatibel Android 7+. Open-source." />
+  <meta property="og:url" content="https://github.com/ClayzaAubert/rutube" />
+  <meta property="og:site_name" content="RuTube" />
+  <meta property="og:image" content="https://s6.imgcdn.dev/Ys2Wag.png" />
+  <meta property="og:image:alt" content="Logo RuTube" />
+  <meta property="og:image:type" content="image/png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RuTube — Tonton YouTube lebih ringan & minim iklan" />
+  <meta name="twitter:description" content="YouTube lebih nyaman di Android 7+ dengan RuTube: blok iklan, hemat data, 4K, dan mode gelap/terang. Open-source." />
+  <meta name="twitter:image" content="https://s6.imgcdn.dev/Ys2Wag.png" />
+
+  <meta name="application-name" content="RuTube" />
+  <meta name="apple-mobile-web-app-title" content="RuTube" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" href="https://s6.imgcdn.dev/Ys2dWv.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://s6.imgcdn.dev/Ys2dWv.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "RuTube",
+    "operatingSystem": "Android 7.0+",
+    "applicationCategory": "MultimediaApplication",
+    "description": "RuTube adalah aplikasi WebView YouTube yang lebih ringan dengan pemblokiran iklan, hemat data, pemutaran 4K, dan mode gelap/terang otomatis. Open-source.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "IDR" },
+    "url": "https://github.com/ClayzaAubert/rutube",
+    "image": "https://s6.imgcdn.dev/Ys2Wag.png",
+    "publisher": { "@type": "Organization", "name": "RuTube Project" }
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="light">
+  <nav>
+    <div class="nav-container">
+      <a href="#home"><img src="https://s6.imgcdn.dev/Ys2Wag.png" alt="Logo RuTube" class="logo" /></a>
+      <div class="nav-links">
+        <a href="#features">Fitur</a>
+        <a href="#download">Unduh</a>
+        <a href="https://github.com/ClayzaAubert/rutube" target="_blank">GitHub</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Ubah tema">
+          <!-- sun -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sun-icon">
+            <path fill="currentColor" fill-rule="evenodd" d="M4.25 19a.75.75 0 0 1 .75-.75h14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75m3 3a.75.75 0 0 1 .75-.75h8a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/>
+            <path fill="currentColor" d="M6.083 15.25a6.75 6.75 0 1 1 11.835 0H22a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1 0-1.5z"/>
+            <path fill="currentColor" fill-rule="evenodd" d="M12 1.25a.75.75 0 0 1 .75.75v1a.75.75 0 0 1-1.5 0V2a.75.75 0 0 1 .75-.75M4.399 4.399a.75.75 0 0 1 1.06 0l.393.392a.75.75 0 0 1-1.06 1.061l-.393-.393a.75.75 0 0 1 0-1.06m15.202 0a.75.75 0 0 1 0 1.06l-.393.393a.75.75 0 0 1-1.06-1.06l.393-.393a.75.75 0 0 1 1.06 0M1.25 12a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1-.75-.75m19 0a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/>
+          </svg>
+          <!-- moon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="moon-icon" style="display:none;">
+            <path fill="currentColor" d="M2 12C2 6.477 6.477 2 12 2c.463 0 .54.693.143.933a6.5 6.5 0 1 0 8.924 8.924c.24-.396.933-.32.933.143c0 1.138-.19 2.231-.54 3.25H22a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1 0-1.5h.54A10 10 0 0 1 2 12m3 6.25a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 0-1.5zm3 3a.75.75 0 0 0 0 1.5h8a.75.75 0 0 0 0-1.5zM19.9 2.307a.483.483 0 0 0-.9 0l-.43 1.095a.48.48 0 0 1-.272.274l-1.091.432a.486.486 0 0 0 0 .903l1.091.432a.48.48 0 0 1 .272.273L19 6.81c.162.41.74.41.9 0l.43-1.095a.48.48 0 0 1 .273-.273l1.091-.432a.486.486 0 0 0 0-.903l-1.091-.432a.48.48 0 0 1-.273-.274z"/>
+            <path fill="currentColor" d="M16.033 8.13a.483.483 0 0 0-.9 0l-.157.399a.48.48 0 0 1-.272.273l-.398.158a.486.486 0 0 0 0 .903l.398.157c.125.05.223.148.272.274l.157.399c.161.41.739.41.9 0l.157-.4a.48.48 0 0 1 .272-.273l.398-.157a.486.486 0 0 0 0-.903l-.398-.158a.48.48 0 0 1-.272-.273z"/>
+          </svg>
+        </button>
+      </div>
+      <button class="mobile-menu" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+    <div class="mobile-nav-links">
+      <a href="#features">Fitur</a>
+      <a href="#download">Unduh</a>
+      <a href="https://github.com/ClayzaAubert/rutube" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Pengalaman YouTube yang Lebih Nyaman</h1>
+        <p>RuTube menghadirkan pengalaman YouTube yang lebih nyaman dengan fitur-fitur bermanfaat, pemblokiran iklan, dan kinerja yang dioptimalkan. Tonton hingga 4K, lebih hemat data, dan nikmati perpindahan mode gelap/terang yang mulus.</p>
+        <div class="hero-buttons">
+          <a href="#download" class="btn btn-primary"><span>📥</span>Unduh APK</a>
+          <a href="https://github.com/ClayzaAubert/rutube" target="_blank" class="btn btn-secondary"><span>💻</span>Lihat Kode</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-elements">
+          <div class="floating-circle circle-1"></div>
+          <div class="floating-circle circle-2"></div>
+          <div class="floating-circle circle-3"></div>
+        </div>
+
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <video src="assets/rushia.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;border:0;background:#000;border-radius:inherit;">
+              Browser kamu tidak mendukung pemutaran video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download" id="about">
+    <div class="download-content">
+      <h2>Tentang RuTube</h2>
+      <p>RuTube adalah aplikasi WebView yang mempermudah akses YouTube pada perangkat lama, khususnya Android 7 (Nougat), dengan penyesuaian UI agar tetap nyaman digunakan. Proyek ini menambahkan sentuhan karakter “Uruha Rushia” sebagai elemen tema. RuTube bersifat open-source—silakan kustomisasi sesuai kebutuhanmu dan kontribusi di GitHub.</p>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-title">
+      <h2>Fitur Unggulan</h2>
+      <p>Semua yang kamu butuhkan untuk pengalaman YouTube yang lebih baik</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🌓</div>
+        <h3>Mode Gelap/Terang Otomatis</h3>
+        <p>Beralih otomatis antara tema gelap dan terang mengikuti preferensi sistem untuk kenyamanan menonton kapan saja.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📊</div>
+        <h3>Hemat Data</h3>
+        <p>Streaming video dioptimalkan agar lebih hemat kuota tanpa mengorbankan kenyamanan menonton.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🎬</div>
+        <h3>Buka Kualitas 4K</h3>
+        <p>Nikmati kualitas video 4K beresolusi tinggi pada perangkat yang mendukung untuk tampilan yang jernih.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🚫</div>
+        <h3>Pemblokiran Iklan</h3>
+        <p>Tonton lebih nyaman dengan pemblokiran iklan bawaan yang membantu mengurangi sebagian besar iklan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="preview">
+    <div class="section-title">
+      <h2>Lihat Tampilannya</h2>
+      <p>Intip antarmuka RuTube yang rapi dengan pengalaman yang mulus</p>
+    </div>
+    <div class="preview-container">
+      <div class="preview-scroll">
+        <div class="preview-item">
+          <div class="screenshot-frame">
+            <div class="screenshot-placeholder">
+              <img src="assets/beranda-awal.png" alt="Beranda Awal" loading="lazy" decoding="async" draggable="false" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;border:0;background:#000;border-radius:inherit;" />
+            </div>
+          </div>
+          <div class="preview-caption">
+            <h4>Beranda Awal</h4>
+            <p>Ketika awal awal masuk app</p>
+          </div>
+        </div>
+
+        <div class="preview-item">
+          <div class="screenshot-frame">
+            <div class="screenshot-placeholder">
+              <img src="assets/beranda-list.png" alt="Beranda — Daftar Video" loading="lazy" decoding="async" draggable="false" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;border:0;background:#000;border-radius:inherit;" />
+            </div>
+          </div>
+          <div class="preview-caption">
+            <h4>Beranda Awal</h4>
+            <p>Ketika kamu sudah login/sudah search video</p>
+          </div>
+        </div>
+
+        <div class="preview-item">
+          <div class="screenshot-frame">
+            <div class="screenshot-placeholder">
+              <video src="assets/rushia.mp4" autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;border:0;background:#000;border-radius:inherit;">
+                Browser kamu tidak mendukung pemutaran video.
+              </video>
+            </div>
+          </div>
+          <div class="preview-caption">
+            <h4>Efek Khusus</h4>
+            <p>Efek khusus channel Uruha Rushia</p>
+          </div>
+        </div>
+
+        <div class="preview-item">
+          <div class="screenshot-frame">
+            <div class="screenshot-placeholder">
+              <img src="assets/watch-video.png" alt="Halaman Tonton Video" loading="lazy" decoding="async" draggable="false" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;border:0;background:#000;border-radius:inherit;" />
+            </div>
+          </div>
+          <div class="preview-caption">
+            <h4>Halaman Tonton</h4>
+            <p>Halaman Putar video yang di sesuaikan mirip app aslinya</p>
+          </div>
+        </div>
+
+        <div class="preview-item">
+          <div class="screenshot-frame">
+            <div class="screenshot-placeholder">
+              <img src="assets/search-video.png" alt="Pencarian Video" loading="lazy" decoding="async" draggable="false" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;border:0;background:#000;border-radius:inherit;" />
+            </div>
+          </div>
+          <div class="preview-caption">
+            <h4>Pencarian Cepat</h4>
+            <p>Temukan video favoritmu lebih mudah</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preview-note">
+      <p>💡 Geser atau scroll untuk melihat lebih banyak tangkapan layar</p>
+    </div>
+  </section>
+
+  <section class="download" id="download">
+    <div class="download-content">
+      <h2>Siap Mencoba?</h2>
+      <p>Unduh RuTube sekarang dan rasakan pengalaman YouTube yang lebih baik</p>
+      <div class="download-box">
+        <div class="download-info">
+          <span class="version-badge">Versi Terbaru</span>
+          <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">RuTube APK</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">Kompatibel dengan Android 7.0 (Nougat) ke atas</p>
+          <a href="#" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.2rem 2.5rem;"><span>⬇️</span>Unduh APK</a>
+        </div>
+      </div>
+      <p style="font-size: 0.9rem; color: var(--text-secondary);">
+        Ingin melihat kodenya? Kunjungi
+        <a href="https://github.com/ClayzaAubert/rutube" target="_blank" style="color: var(--accent); text-decoration: none; font-weight: 600;">repositori GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div><img src="https://s6.imgcdn.dev/Ys2Wag.png" alt="Logo RuTube" style="height: 30px;" /></div>
+      <div class="footer-links">
+        <a href="#features">Fitur</a>
+        <a href="#download">Unduh</a>
+        <a href="https://github.com/ClayzaAubert/rutube" target="_blank">GitHub</a>
+      </div>
+      <div style="color: var(--text-secondary); font-size: 0.9rem;">© 2024 RuTube. Hak cipta dilindungi.</div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

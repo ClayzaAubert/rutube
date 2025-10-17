@@ -28,11 +28,11 @@ Didesain agar ringan, hemat kuota, bebas iklan, dan tetap elegan — dengan sent
 
 | Tampilan | Cuplikan |
 |-----------|-----------|
-| Beranda Awal | ![Beranda Awal](assets/beranda-awal.png) |
-| Daftar Video | ![Beranda List Video](assets/beranda-list.png) |
-| Pencarian Video | ![Pencarian](assets/search-video.png) |
-| Menonton Video | ![Watch Video](assets/watch-video.png) |
-| Efek Khusus Rushia | 🎥 [Lihat Video](assets/rushia.mp4) |
+| Beranda Awal | ![Beranda Awal](home/assets/beranda-awal.png) |
+| Daftar Video | ![Beranda List Video](home/assets/beranda-list.png) |
+| Pencarian Video | ![Pencarian](home/assets/search-video.png) |
+| Menonton Video | ![Watch Video](home/assets/watch-video.png) |
+| Efek Khusus Rushia | 🎥 [Lihat Video](home/assets/rushia.mp4) |
 
 ---
 
@@ -67,6 +67,3 @@ Didesain agar ringan, hemat kuota, bebas iklan, dan tetap elegan — dengan sent
 ## 📜 Lisensi
 
 MIT License © 2025 — [Clayza Aubert](https://github.com/ClayzaAubert)
-
----
-```
