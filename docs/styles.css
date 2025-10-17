@@ -124,7 +124,7 @@ nav{
 
 .phone-mockup{
   position:relative;
-  width:335px; aspect-ratio:9/16;
+  width:335px;
   background:var(--bg-secondary);
   border-radius:40px; border:8px solid var(--text-primary);
   box-shadow:0 30px 60px rgba(0,0,0,.3);
